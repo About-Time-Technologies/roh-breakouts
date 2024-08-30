@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ISO1432")(type "KiCad")(uri "${KIPRJMOD}/footprints/ISO1432BDW.kicad_sym")(options "")(descr ""))
+)
