@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TSP40210")(type "KiCad")(uri "${KIPRJMOD}/footprints/TPS40210DGQRG4.kicad_sym")(options "")(descr ""))
+)
