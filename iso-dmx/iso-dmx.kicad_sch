@@ -260,6 +260,207 @@
 				)
 			)
 		)
+		(symbol "Converter_DCDC:TME-0305S"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TME-0305S"
+				(at 2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TME_03xxS_05xxS_12xxS_Single_THT"
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.tracopower.com/products/tme.pdf"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1W DC/DC converter unregulated, 2.97-3.63V input, 5V output voltage, 200mA output, 1kVDC isolation, SIP-4"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Traco isolated isolation dc-dc converter not-regulated non-regulated single 1W"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Converter*DCDC*TRACO*TME*03xxS*05xxS*12xxS*Single*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TME-0305S_0_0"
+				(pin power_in line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "-Vin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "+Vin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "-Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "+Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TME-0305S_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -1159,7 +1360,7 @@
 	)
 	(global_label "Z"
 		(shape input)
-		(at 154.94 55.88 180)
+		(at 203.2 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1169,7 +1370,7 @@
 		)
 		(uuid "00b9a1f1-fbf8-4cfc-ba60-f252c849c119")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.7453 55.88 0)
+			(at 199.0053 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1203,7 +1404,7 @@
 	)
 	(global_label "R"
 		(shape input)
-		(at 115.57 50.8 180)
+		(at 52.07 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1213,7 +1414,7 @@
 		)
 		(uuid "07c5bab9-ceb9-4fd7-83e1-a69b56c33261")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.3148 50.8 0)
+			(at 47.8148 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1247,7 +1448,7 @@
 	)
 	(global_label "DE"
 		(shape input)
-		(at 115.57 55.88 180)
+		(at 52.07 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1257,7 +1458,7 @@
 		)
 		(uuid "0de48686-9395-4c8c-85f7-b0ea89d009f1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.1658 55.88 0)
+			(at 46.6658 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1269,7 +1470,7 @@
 	)
 	(global_label "Y"
 		(shape input)
-		(at 154.94 58.42 180)
+		(at 203.2 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1279,7 +1480,7 @@
 		)
 		(uuid "10a159ea-c558-4926-b26e-0488de4e11d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.8662 58.42 0)
+			(at 199.1262 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1335,7 +1536,7 @@
 	)
 	(global_label "B"
 		(shape input)
-		(at 154.94 53.34 180)
+		(at 203.2 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1345,7 +1546,7 @@
 		)
 		(uuid "20a8e772-e5fe-4c9f-91ff-fa56f28aca6b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.6848 53.34 0)
+			(at 198.9448 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1357,7 +1558,7 @@
 	)
 	(global_label "GND1"
 		(shape input)
-		(at 115.57 48.26 180)
+		(at 52.07 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1367,7 +1568,7 @@
 		)
 		(uuid "222a08ba-3530-415f-bb6b-f70026799619")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.5048 48.26 0)
+			(at 44.0048 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1412,6 +1613,28 @@
 		(uuid "272a73e1-05ef-4368-8af7-2732b4613d8f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 94.9862 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND1"
+		(shape input)
+		(at 130.81 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "302ec5e9-cc77-4e7b-9620-15dc804a9246")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.7448 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1487,6 +1710,28 @@
 			)
 		)
 	)
+	(global_label "GND2"
+		(shape input)
+		(at 151.13 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d634ece-4675-4f78-9c41-55f42f2dbb86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 159.1952 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DE"
 		(shape input)
 		(at 88.9 92.71 0)
@@ -1533,7 +1778,7 @@
 	)
 	(global_label "VCC2"
 		(shape input)
-		(at 154.94 45.72 180)
+		(at 203.2 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1543,7 +1788,7 @@
 		)
 		(uuid "84af293d-2917-4631-826e-7dae8915de7e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.1167 45.72 0)
+			(at 195.3767 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1597,6 +1842,28 @@
 			)
 		)
 	)
+	(global_label "VCC"
+		(shape input)
+		(at 130.81 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a90e838e-ae46-4c85-aaa5-f44908b8cf75")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.1962 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND1"
 		(shape input)
 		(at 78.74 114.3 180)
@@ -1621,7 +1888,7 @@
 	)
 	(global_label "GND2"
 		(shape input)
-		(at 154.94 48.26 180)
+		(at 203.2 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1631,7 +1898,7 @@
 		)
 		(uuid "b4c84520-e21a-4836-92fb-70ab4b2cdab2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.8748 48.26 0)
+			(at 195.1348 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1665,7 +1932,7 @@
 	)
 	(global_label "A"
 		(shape input)
-		(at 154.94 50.8 180)
+		(at 203.2 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1675,7 +1942,7 @@
 		)
 		(uuid "cdd6a050-225b-4b39-a4e5-bc1fbbf7ded9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.8662 50.8 0)
+			(at 199.1262 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1687,7 +1954,7 @@
 	)
 	(global_label "VCC"
 		(shape input)
-		(at 115.57 45.72 180)
+		(at 52.07 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1697,7 +1964,7 @@
 		)
 		(uuid "d261dec4-c5ea-457f-8adf-688d3953fa4b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.9562 45.72 0)
+			(at 45.4562 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1709,7 +1976,7 @@
 	)
 	(global_label "D"
 		(shape input)
-		(at 115.57 58.42 180)
+		(at 52.07 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1719,7 +1986,7 @@
 		)
 		(uuid "d865a756-ea62-47e4-ba69-80f26017d49a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.3148 58.42 0)
+			(at 47.8148 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1729,9 +1996,31 @@
 			)
 		)
 	)
+	(global_label "VCC2"
+		(shape input)
+		(at 151.13 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d9eefdc8-ed28-4f19-bc7a-d9d4befe28d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 158.9533 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "NRE"
 		(shape input)
-		(at 115.57 53.34 180)
+		(at 52.07 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1741,7 +2030,7 @@
 		)
 		(uuid "dbbcd877-f0e5-460f-83f1-5a556a182f60")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.8353 53.34 0)
+			(at 45.3353 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2004,7 +2293,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 120.65 50.8 0)
+		(at 57.15 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2013,7 +2302,7 @@
 		(fields_autoplaced yes)
 		(uuid "2cb5e780-9ad6-473b-9928-895c9046bfea")
 		(property "Reference" "J1"
-			(at 123.19 50.7999 0)
+			(at 59.69 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2022,7 +2311,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06"
-			(at 123.19 53.3399 0)
+			(at 59.69 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2031,7 +2320,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 120.65 50.8 0)
+			(at 57.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2040,7 +2329,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 50.8 0)
+			(at 57.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2049,7 +2338,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 120.65 50.8 0)
+			(at 57.15 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2112,7 +2401,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 168.6052 97.79 0)
 			(effects
 				(font
@@ -2223,6 +2512,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Converter_DCDC:TME-0305S")
+		(at 140.97 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d2de4fd-3fc4-4157-b4e2-7471da106ef2")
+		(property "Reference" "U2"
+			(at 140.97 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TME-0305S"
+			(at 140.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_DCDC:Converter_DCDC_TRACO_TME_03xxS_05xxS_12xxS_Single_THT"
+			(at 140.97 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tracopower.com/products/tme.pdf"
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1W DC/DC converter unregulated, 2.97-3.63V input, 5V output voltage, 200mA output, 1kVDC isolation, SIP-4"
+			(at 140.97 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a15d8ac8-e642-4097-900f-1ccb17a5adc4")
+		)
+		(pin "3"
+			(uuid "83437589-98cb-4c05-b97e-f009e7971aee")
+		)
+		(pin "2"
+			(uuid "1a7de6ba-a708-4cdd-88e1-e96fc3900f38")
+		)
+		(pin "4"
+			(uuid "7f40b621-1ca2-4383-94ff-9f3dc6926ada")
+		)
+		(instances
+			(project ""
+				(path "/4eba6a62-16d7-4b21-b123-4a5ee7a39e0a"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 106.68 93.98 0)
 		(unit 1)
@@ -2250,7 +2613,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 107.6452 97.79 0)
 			(effects
 				(font
@@ -2294,7 +2657,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 160.02 50.8 0)
+		(at 208.28 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2303,7 +2666,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa221fc9-83f7-41ef-a3c2-7a09a553367c")
 		(property "Reference" "J2"
-			(at 162.56 50.7999 0)
+			(at 210.82 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2312,7 +2675,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06"
-			(at 162.56 53.3399 0)
+			(at 210.82 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2321,7 +2684,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 160.02 50.8 0)
+			(at 208.28 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2330,7 +2693,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 50.8 0)
+			(at 208.28 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2339,7 +2702,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 160.02 50.8 0)
+			(at 208.28 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
