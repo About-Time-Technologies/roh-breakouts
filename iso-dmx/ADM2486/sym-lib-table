@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ISO1432")(type "KiCad")(uri "${KIPRJMOD}/footprints/ISO1432BDW.kicad_sym")(options "")(descr ""))
+  (lib (name "ProjectLib")(type "KiCad")(uri "${KIPRJMOD}/ProjectLib.kicad_sym")(options "")(descr ""))
+  (lib (name "ASM809")(type "KiCad")(uri "${KIPRJMOD}/footprints/ADM809-5SARTZ-RL7.kicad_sym")(options "")(descr ""))
+)
