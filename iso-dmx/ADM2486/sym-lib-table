@@ -3,4 +3,5 @@
   (lib (name "ISO1432")(type "KiCad")(uri "${KIPRJMOD}/footprints/ISO1432BDW.kicad_sym")(options "")(descr ""))
   (lib (name "ProjectLib")(type "KiCad")(uri "${KIPRJMOD}/ProjectLib.kicad_sym")(options "")(descr ""))
   (lib (name "ASM809")(type "KiCad")(uri "${KIPRJMOD}/footprints/ADM809-5SARTZ-RL7.kicad_sym")(options "")(descr ""))
+  (lib (name "MHCI")(type "KiCad")(uri "C:/dev/MHCI/MHCI.kicad_sym")(options "")(descr ""))
 )
