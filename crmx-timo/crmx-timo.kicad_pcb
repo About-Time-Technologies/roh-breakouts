@@ -6270,6 +6270,7 @@
 		(property "Reference" "JP2"
 			(at 0 1.8 0)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "d950d30a-2bfd-4ec1-8c50-524d4fe796cb")
 			(effects
 				(font
@@ -6584,6 +6585,7 @@
 		(property "Reference" "J2"
 			(at 0 2.33 90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "f6faedac-cf02-439b-84c1-07e3e2c1a489")
 			(effects
 				(font
@@ -6923,6 +6925,7 @@
 		(property "Reference" "J1"
 			(at 0 2.33 90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "38731404-09f3-4809-9342-885233a04b1f")
 			(effects
 				(font
@@ -7275,6 +7278,32 @@
 			)
 		)
 	)
+	(gr_poly
+		(pts
+			(xy 212.557999 90.382001) (xy 213.868 90.822) (xy 213.868 90.932) (xy 212.557997 91.372001) (xy 212.557999 91.142)
+			(xy 213.428 90.881999) (xy 212.557999 90.612001)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "B.SilkS")
+		(uuid "310a6437-e7de-4d81-873c-342f7d87f469")
+	)
+	(gr_poly
+		(pts
+			(xy 176.202 100.685999) (xy 175.762001 99.375998) (xy 175.652001 99.375998) (xy 175.212 100.686001)
+			(xy 175.442001 100.685999) (xy 175.702002 99.815998) (xy 175.972 100.685999)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "d5e36efe-8551-4241-a93a-b900349f6ecb")
+	)
 	(gr_line
 		(start 215.9 77.47)
 		(end 215.9 95.25)
@@ -7400,6 +7429,46 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "c3827f20-a86f-455d-a24b-1854643ea67f")
+	)
+	(gr_text "TT"
+		(at 213.167998 89.292001 -90)
+		(layer "B.SilkS")
+		(uuid "49cd23e3-4e32-4f72-9bf1-8664378559bd")
+		(effects
+			(font
+				(face "Inconsolata")
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify mirror)
+		)
+		(render_cache "TT" 270
+			(polygon
+				(pts
+					(xy 212.545498 89.938267) (xy 213.658146 89.938267) (xy 213.658146 90.292907) (xy 213.858547 90.292907)
+					(xy 213.858547 89.336697) (xy 213.658146 89.336697) (xy 213.658146 89.710388) (xy 212.545498 89.710388)
+				)
+			)
+			(polygon
+				(pts
+					(xy 212.545498 88.889) (xy 213.658146 88.889) (xy 213.658146 89.24364) (xy 213.858547 89.24364)
+					(xy 213.858547 88.287429) (xy 213.658146 88.287429) (xy 213.658146 88.661121) (xy 212.545498 88.661121)
+				)
+			)
+		)
+	)
+	(gr_text "MHCI\nCRMX Timo\nv1.0"
+		(at 207.457997 91.582001 270)
+		(layer "B.SilkS")
+		(uuid "be543fc6-477c-4b95-a33c-8f335f33b18d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(gr_text "SCL"
 		(at 200.66 72.39 0)
@@ -7543,6 +7612,33 @@
 				(thickness 0.1)
 			)
 			(justify right)
+		)
+	)
+	(gr_text "TT"
+		(at 177.292 100.076 0)
+		(layer "F.SilkS")
+		(uuid "70bbd6df-f5b7-4abf-a98b-87a3ac6f8aaa")
+		(effects
+			(font
+				(face "Inconsolata")
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+		)
+		(render_cache "TT" 0
+			(polygon
+				(pts
+					(xy 176.645733 100.6985) (xy 176.645733 99.585851) (xy 176.291093 99.585851) (xy 176.291093 99.38545)
+					(xy 177.247303 99.38545) (xy 177.247303 99.585851) (xy 176.873612 99.585851) (xy 176.873612 100.6985)
+				)
+			)
+			(polygon
+				(pts
+					(xy 177.695 100.6985) (xy 177.695 99.585851) (xy 177.34036 99.585851) (xy 177.34036 99.38545) (xy 178.296571 99.38545)
+					(xy 178.296571 99.585851) (xy 177.922879 99.585851) (xy 177.922879 100.6985)
+				)
+			)
 		)
 	)
 	(gr_text "RST"
@@ -8033,24 +8129,6 @@
 		(uuid "2759d506-afbb-4c20-87f4-781400e3dc5b")
 	)
 	(via
-		(at 210.82 82.55)
-		(size 0.9)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 7)
-		(uuid "2dd55ed9-2082-4d4b-9a3e-e255dc2ff9f9")
-	)
-	(via
-		(at 210.82 88.9)
-		(size 0.9)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 7)
-		(uuid "35c4326a-5c72-4b4d-8983-e8732fe55951")
-	)
-	(via
 		(at 204.47 73.66)
 		(size 0.9)
 		(drill 0.4)
@@ -8120,15 +8198,6 @@
 		(free yes)
 		(net 7)
 		(uuid "d4ae9ca7-9312-4e7d-9c3d-28699c1da62b")
-	)
-	(via
-		(at 175.26 100.33)
-		(size 0.9)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 7)
-		(uuid "e44ddb65-118c-4170-b4cc-d76804b2c722")
 	)
 	(segment
 		(start 182.753 77.343)

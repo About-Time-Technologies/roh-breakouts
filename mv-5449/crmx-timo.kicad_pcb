@@ -1618,6 +1618,32 @@
 			)
 		)
 	)
+	(gr_poly
+		(pts
+			(xy 196.361999 91.51) (xy 197.672 91.95) (xy 197.672 92.06) (xy 196.362 92.5) (xy 196.361999 92.27)
+			(xy 197.232 92.01) (xy 196.362 91.74)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "B.SilkS")
+		(uuid "e1de3de5-f668-4b37-a1b0-6dcb9ac6bf2e")
+	)
+	(gr_poly
+		(pts
+			(xy 211.327999 85.778) (xy 212.637999 85.338) (xy 212.638 85.228) (xy 211.328 84.788) (xy 211.327999 85.018)
+			(xy 212.198 85.278) (xy 211.328 85.548)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "ee7b4273-37a7-48c2-b997-3e268146e4d6")
+	)
 	(gr_line
 		(start 213.221062 77.47)
 		(end 213.221062 95.25)
@@ -1744,6 +1770,46 @@
 		(layer "Edge.Cuts")
 		(uuid "c3827f20-a86f-455d-a24b-1854643ea67f")
 	)
+	(gr_text "TT"
+		(at 196.972 90.42 -90)
+		(layer "B.SilkS")
+		(uuid "11944761-2321-462f-9254-6b7ee829d78a")
+		(effects
+			(font
+				(face "Inconsolata")
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify mirror)
+		)
+		(render_cache "TT" 270
+			(polygon
+				(pts
+					(xy 196.3495 91.066266) (xy 197.462148 91.066266) (xy 197.462148 91.420906) (xy 197.662549 91.420906)
+					(xy 197.662549 90.464696) (xy 197.462148 90.464696) (xy 197.462148 90.838387) (xy 196.3495 90.838387)
+				)
+			)
+			(polygon
+				(pts
+					(xy 196.3495 90.016999) (xy 197.462148 90.016999) (xy 197.462148 90.371639) (xy 197.662549 90.371639)
+					(xy 197.662549 89.415428) (xy 197.462148 89.415428) (xy 197.462148 89.78912) (xy 196.3495 89.78912)
+				)
+			)
+		)
+	)
+	(gr_text "MHCI\nCTI MV Breakout\nv1.0"
+		(at 191.262 92.71 -90)
+		(layer "B.SilkS")
+		(uuid "5a7a5f29-4a9f-40ad-8840-68ef20302983")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "SCL"
 		(at 200.66 72.39 0)
 		(layer "F.SilkS")
@@ -1850,6 +1916,33 @@
 				(thickness 0.1)
 			)
 			(justify top)
+		)
+	)
+	(gr_text "TT"
+		(at 211.938 86.868 -90)
+		(layer "F.SilkS")
+		(uuid "aac1d193-36b6-4ca3-8f19-bbc7b74aa91d")
+		(effects
+			(font
+				(face "Inconsolata")
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+		)
+		(render_cache "TT" 270
+			(polygon
+				(pts
+					(xy 211.3155 86.221733) (xy 212.428148 86.221733) (xy 212.428148 85.867093) (xy 212.628549 85.867093)
+					(xy 212.628549 86.823303) (xy 212.428148 86.823303) (xy 212.428148 86.449612) (xy 211.3155 86.449612)
+				)
+			)
+			(polygon
+				(pts
+					(xy 211.3155 87.271) (xy 212.428148 87.271) (xy 212.428148 86.91636) (xy 212.628549 86.91636) (xy 212.628549 87.872571)
+					(xy 212.428148 87.872571) (xy 212.428148 87.498879) (xy 211.3155 87.498879)
+				)
+			)
 		)
 	)
 	(gr_text "SCK"
@@ -2247,7 +2340,7 @@
 		(uuid "50e58a37-9988-47ba-a69b-163c80ab83ed")
 	)
 	(via
-		(at 193.04 81.915)
+		(at 192.024 82.042)
 		(size 0.7)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -2319,7 +2412,7 @@
 		(uuid "c33bd77d-8321-4c46-8770-36ef1f6706ba")
 	)
 	(via
-		(at 195.621673 90.110589)
+		(at 196.85 88.138)
 		(size 0.7)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
