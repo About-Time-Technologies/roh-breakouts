@@ -1,0 +1,566 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "03198d77-8243-4e91-bff3-aca6c8079f04")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MHCI:MHCI-A6211"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MCHI:MHCI-A6211"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MHCI-A6211_1_1"
+				(rectangle
+					(start -7.62 -1.27)
+					(end 7.62 -15.24)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -10.16 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "LED+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 -10.16 180)
+					(length 2.54)
+					(name "LED+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(label "LED-"
+		(at 165.1 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e51e1fe-3423-43c6-8f6c-0c091a78931a")
+	)
+	(label "LED-"
+		(at 148.59 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f6f5089-0fd8-42bb-a186-55198824390c")
+	)
+	(label "LED+"
+		(at 165.1 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "673e507c-415c-46be-b165-2ef6641efd0b")
+	)
+	(label "LED+"
+		(at 148.59 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e30796ce-c3c0-4379-9736-dd3dea303f11")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 138.43 97.79 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f29601d-fc00-4c76-9fa0-83621b635bd2")
+	)
+	(hierarchical_label "VCC"
+		(shape input)
+		(at 128.27 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b8d7b4ea-2930-40e5-837d-44e851babf07")
+	)
+	(hierarchical_label "EN"
+		(shape input)
+		(at 128.27 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f0e04d43-7df1-4b6d-9bee-259a98986ac4")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 170.18 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20b57b1c-0313-4811-961b-8096f1ea066a")
+		(property "Reference" "J2"
+			(at 172.72 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 172.72 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MHCI:2060-452-998-404 Wago"
+			(at 170.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 170.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "15dcd98a-d5f9-41ce-ab83-be655c041ab7")
+		)
+		(pin "1"
+			(uuid "d0669f27-5cb6-4c6a-9898-e24dd37a23e7")
+		)
+		(instances
+			(project "walkure-motherboard"
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/44e0e4c3-d054-44eb-8527-837d0d84ce3e"
+					(reference "J2")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/7a973467-2ddb-4cb4-906b-a8293c565e7f"
+					(reference "J1")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/c0eded2c-23c7-426d-bd1d-856ac77b9f92"
+					(reference "J3")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/37f8b1d7-e0c7-48d1-995a-12109f249ac5"
+					(reference "J4")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/a940021a-3384-4959-85e8-34931b2f502a"
+					(reference "J5")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/69454e77-dd85-4036-b570-61684380d61b"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MHCI:MHCI-A6211")
+		(at 138.43 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53756860-a2a5-4188-b55a-d112a2b6bc1e")
+		(property "Reference" "U1"
+			(at 138.43 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 138.43 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MHCI:MHCI-A6211"
+			(at 138.43 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "09438f6a-33d3-4579-92e7-35dfb166b4f5")
+		)
+		(pin "2"
+			(uuid "fdf073ed-3a91-4723-aecb-a6c82e622192")
+		)
+		(pin "1"
+			(uuid "8f486763-8243-466c-bb77-2bd8da366e00")
+		)
+		(pin "3"
+			(uuid "a1c35937-ab34-4224-8caa-9d991bf25e54")
+		)
+		(pin "4"
+			(uuid "3e615ea5-8371-48de-b03e-a72882ae91a0")
+		)
+		(instances
+			(project "walkure-motherboard"
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/44e0e4c3-d054-44eb-8527-837d0d84ce3e"
+					(reference "U1")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/7a973467-2ddb-4cb4-906b-a8293c565e7f"
+					(reference "U3")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/c0eded2c-23c7-426d-bd1d-856ac77b9f92"
+					(reference "U4")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/37f8b1d7-e0c7-48d1-995a-12109f249ac5"
+					(reference "U5")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/a940021a-3384-4959-85e8-34931b2f502a"
+					(reference "U6")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/69454e77-dd85-4036-b570-61684380d61b"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
