@@ -297,17 +297,6 @@
 		)
 	)
 	(label "LED-"
-		(at 165.1 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0e51e1fe-3423-43c6-8f6c-0c091a78931a")
-	)
-	(label "LED-"
 		(at 148.59 90.17 0)
 		(fields_autoplaced yes)
 		(effects
@@ -318,7 +307,7 @@
 		)
 		(uuid "2f6f5089-0fd8-42bb-a186-55198824390c")
 	)
-	(label "LED+"
+	(label "LED-"
 		(at 165.1 88.9 180)
 		(fields_autoplaced yes)
 		(effects
@@ -327,7 +316,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "673e507c-415c-46be-b165-2ef6641efd0b")
+		(uuid "9e1214de-f65b-41a5-aebd-a22d9917b10c")
 	)
 	(label "LED+"
 		(at 148.59 85.09 0)
@@ -339,6 +328,17 @@
 			(justify left bottom)
 		)
 		(uuid "e30796ce-c3c0-4379-9736-dd3dea303f11")
+	)
+	(label "LED+"
+		(at 165.1 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e6f1db19-aeff-49f0-be26-e15beabfb97a")
 	)
 	(hierarchical_label "GND"
 		(shape input)
