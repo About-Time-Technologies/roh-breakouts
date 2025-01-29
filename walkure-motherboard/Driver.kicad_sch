@@ -439,28 +439,28 @@
 		)
 		(instances
 			(project "walkure-motherboard"
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/37f8b1d7-e0c7-48d1-995a-12109f249ac5"
+					(reference "J4")
+					(unit 1)
+				)
 				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/44e0e4c3-d054-44eb-8527-837d0d84ce3e"
 					(reference "J2")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/69454e77-dd85-4036-b570-61684380d61b"
+					(reference "J6")
 					(unit 1)
 				)
 				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/7a973467-2ddb-4cb4-906b-a8293c565e7f"
 					(reference "J1")
 					(unit 1)
 				)
-				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/c0eded2c-23c7-426d-bd1d-856ac77b9f92"
-					(reference "J3")
-					(unit 1)
-				)
-				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/37f8b1d7-e0c7-48d1-995a-12109f249ac5"
-					(reference "J4")
-					(unit 1)
-				)
 				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/a940021a-3384-4959-85e8-34931b2f502a"
 					(reference "J5")
 					(unit 1)
 				)
-				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/69454e77-dd85-4036-b570-61684380d61b"
-					(reference "J6")
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/c0eded2c-23c7-426d-bd1d-856ac77b9f92"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -536,28 +536,28 @@
 		)
 		(instances
 			(project "walkure-motherboard"
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/37f8b1d7-e0c7-48d1-995a-12109f249ac5"
+					(reference "U5")
+					(unit 1)
+				)
 				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/44e0e4c3-d054-44eb-8527-837d0d84ce3e"
 					(reference "U1")
+					(unit 1)
+				)
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/69454e77-dd85-4036-b570-61684380d61b"
+					(reference "U7")
 					(unit 1)
 				)
 				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/7a973467-2ddb-4cb4-906b-a8293c565e7f"
 					(reference "U3")
 					(unit 1)
 				)
-				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/c0eded2c-23c7-426d-bd1d-856ac77b9f92"
-					(reference "U4")
-					(unit 1)
-				)
-				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/37f8b1d7-e0c7-48d1-995a-12109f249ac5"
-					(reference "U5")
-					(unit 1)
-				)
 				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/a940021a-3384-4959-85e8-34931b2f502a"
 					(reference "U6")
 					(unit 1)
 				)
-				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/69454e77-dd85-4036-b570-61684380d61b"
-					(reference "U7")
+				(path "/8be03a84-6fff-4ab2-a99c-d800124d09d4/c0eded2c-23c7-426d-bd1d-856ac77b9f92"
+					(reference "U4")
 					(unit 1)
 				)
 			)
