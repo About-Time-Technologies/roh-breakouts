@@ -4831,7 +4831,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "Inductor"
 			(at 156.21 85.09 90)
 			(effects
 				(font
@@ -4907,7 +4907,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "120k"
 			(at 95.25 87.63 90)
 			(effects
 				(font
@@ -5467,7 +5467,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "Diode"
 			(at 152.4 98.7424 90)
 			(effects
 				(font

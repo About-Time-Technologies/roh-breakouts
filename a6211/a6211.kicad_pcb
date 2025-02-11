@@ -2499,7 +2499,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "Inductor"
 			(at 0 6.35 0)
 			(layer "F.Fab")
 			(uuid "e9a360f9-973a-44a0-a743-bf8d0900e642")
@@ -3802,7 +3802,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "Diode"
 			(at 0 4.2 0)
 			(layer "F.Fab")
 			(uuid "3437c6d7-4360-401b-8e07-9f5ab957c82c")
@@ -4811,7 +4811,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "120k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "3f39f2ad-15fe-4d4a-9d99-d1318897c5fe")
