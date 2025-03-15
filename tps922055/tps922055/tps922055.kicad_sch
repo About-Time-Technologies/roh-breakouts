@@ -5018,7 +5018,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C145187"
+		(property "LCSC" "C151733"
+			(at 148.59 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC_Alt" "C145187"
 			(at 148.59 49.53 90)
 			(effects
 				(font

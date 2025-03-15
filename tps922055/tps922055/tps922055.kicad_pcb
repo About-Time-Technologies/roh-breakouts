@@ -142,7 +142,7 @@
 		(descr "SMD capacitor, aluminum electrolytic, Vishay 1010, 10.0x10.5mm, http://www.vishay.com/docs/28395/150crz.pdf")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C6"
-			(at 0 -6.3 360)
+			(at 0 -6.3 0)
 			(layer "F.SilkS")
 			(uuid "4846fb11-b6d8-4be8-9c6f-f99eefb1aede")
 			(effects
@@ -153,7 +153,7 @@
 			)
 		)
 		(property "Value" "15uF"
-			(at 0 6.3 360)
+			(at 0 6.3 0)
 			(layer "F.Fab")
 			(uuid "68848b2c-6321-4c9c-ab4b-313626bb8292")
 			(effects
@@ -549,7 +549,7 @@
 			(uuid "80616259-585d-4624-a4fe-bf66cf9cd231")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "46fddf1d-a596-41d7-a8cc-0051cf0f6912")
 			(effects
@@ -596,7 +596,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C5"
-			(at -2.575 0 360)
+			(at -2.575 0 0)
 			(layer "F.SilkS")
 			(uuid "26e1d871-b1bd-48ca-b3a3-e981f0155b8f")
 			(effects
@@ -607,7 +607,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "727e68f4-795c-4b42-bac9-b5952e9da4b0")
 			(effects
@@ -772,7 +772,7 @@
 			(uuid "f41fbbda-e43d-408a-9e00-85a7c792d13b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "fe438b36-349d-4a90-bfcc-3474474376d8")
 			(effects
@@ -1040,7 +1040,7 @@
 		(uuid "48e83ef9-615d-4801-8b59-05ebb66af1cf")
 		(at 178.2 83.4 90)
 		(property "Reference" "J1"
-			(at 0 -0.780001 270)
+			(at 0 -0.780001 -90)
 			(layer "F.SilkS")
 			(uuid "47bc7030-1a3c-4099-80ed-172aa4a8c61d")
 			(effects
@@ -1051,7 +1051,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 0 -9.799999 270)
+			(at 0 -9.799999 -90)
 			(layer "F.Fab")
 			(uuid "dd3d566c-eb93-493e-8b2e-a4d086c28606")
 			(effects
@@ -1062,7 +1062,7 @@
 			)
 		)
 		(property "Footprint" "MHCI:2060-452-998-404 Wago"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2e9a5d94-a020-4b06-95f4-e3d974c95b52")
@@ -1074,7 +1074,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3fbe25fc-8397-4c1e-8dc2-8d9cce92addc")
@@ -1086,7 +1086,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "13f46dc5-0f48-40f9-87bc-1922aebc884e")
@@ -1287,7 +1287,7 @@
 			(uuid "bea1746d-0ac1-4b4e-bb6e-d3501ff3e17e")
 		)
 		(fp_text user "Copyright 2016 Accelerated Designs. All rights reserved."
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "Cmts.User")
 			(uuid "a49ae9bf-3659-4097-b50b-4002310eb2a8")
 			(effects
@@ -4717,12 +4717,25 @@
 				)
 			)
 		)
-		(property "LCSC" "C145187"
+		(property "LCSC" "C151733"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e667b08c-7228-4d8c-be4a-a05e51c31d6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC_Alt" "C145187"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "174765dc-e808-4dfb-ac97-ffcb4b3192ff")
 			(effects
 				(font
 					(size 1 1)
@@ -5937,7 +5950,7 @@
 			(at -1.4625 0 180)
 			(size 1.125 1.75)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(roundrect_rratio 0.222222)
+			(roundrect_rratio 0.2222222222)
 			(net 11 "/CSN")
 			(pintype "passive")
 			(uuid "1270b47a-0740-42cf-b78f-8ce43f9a6d49")
@@ -5946,7 +5959,7 @@
 			(at 1.4625 0 180)
 			(size 1.125 1.75)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(roundrect_rratio 0.222222)
+			(roundrect_rratio 0.2222222222)
 			(net 1 "LED-")
 			(pintype "passive")
 			(uuid "2ce18b33-2d91-4681-adc9-67ff6c6a0150")
@@ -7101,7 +7114,7 @@
 		(descr "SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP1"
-			(at 0 1.8 360)
+			(at 0 1.8 0)
 			(layer "B.SilkS")
 			(uuid "e5a62ec4-ddb1-4f95-8c58-4674eda5d0d8")
 			(effects
@@ -7113,7 +7126,7 @@
 			)
 		)
 		(property "Value" "Jumper_3_Open"
-			(at 0 -1.9 360)
+			(at 0 -1.9 0)
 			(layer "B.Fab")
 			(uuid "bb7391ca-7b87-4966-939a-ab8a6ad7f42a")
 			(effects
@@ -7412,7 +7425,7 @@
 		(descr "Through hole straight pin header, 1x05, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x05 2.54mm single row")
 		(property "Reference" "J2"
-			(at 0 2.33 270)
+			(at 0 2.33 -90)
 			(layer "B.SilkS")
 			(uuid "cfbe2be2-fd34-44d1-82ee-1275e6282d47")
 			(effects
@@ -7424,7 +7437,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05"
-			(at 0 -12.49 270)
+			(at 0 -12.49 -90)
 			(layer "B.Fab")
 			(uuid "0f9a280c-f9b5-412b-9254-168c9e18419e")
 			(effects
