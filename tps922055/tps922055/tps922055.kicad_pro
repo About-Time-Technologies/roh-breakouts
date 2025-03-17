@@ -676,6 +676,12 @@
           "label": "LCSC",
           "name": "LCSC",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC_Alt",
+          "name": "LCSC_Alt",
+          "show": false
         }
       ],
       "filter_string": "",
