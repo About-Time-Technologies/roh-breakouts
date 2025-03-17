@@ -3510,7 +3510,7 @@
 	)
 	(global_label "LED-"
 		(shape input)
-		(at 181.61 57.15 180)
+		(at 194.31 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3520,7 +3520,7 @@
 		)
 		(uuid "c020a08a-1a59-4baa-abb0-f2bb180f09dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.6053 57.15 0)
+			(at 186.3053 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3532,7 +3532,7 @@
 	)
 	(global_label "LED+"
 		(shape input)
-		(at 181.61 59.69 180)
+		(at 194.31 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3542,7 +3542,7 @@
 		)
 		(uuid "c2d6f7eb-051d-475e-9aff-97d8870eb6f4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.6053 59.69 0)
+			(at 186.3053 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3636,7 +3636,7 @@
 			(uuid "4a014cdc-5f34-471e-865a-d061f3e8a7f2")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "JP1")
 					(unit 1)
@@ -4048,6 +4048,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C150827"
+			(at 121.92 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "5f72f10c-cb94-4e18-8392-8bccb11c07fb")
 		)
@@ -4076,7 +4085,7 @@
 			(uuid "499d974e-a6fa-4654-8b5f-b892482bb1fc")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "U1")
 					(unit 1)
@@ -4142,7 +4151,7 @@
 			(uuid "aebae49f-e2ba-4a70-b0ae-960f75bba07e")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "#PWR02")
 					(unit 1)
@@ -4362,7 +4371,7 @@
 			(uuid "201b0253-241f-441d-b8f6-fa9a0ab83361")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "C1")
 					(unit 1)
@@ -4586,7 +4595,7 @@
 			(uuid "0b503c6a-3a2a-4045-b63c-18f2c55eaecc")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "J2")
 					(unit 1)
@@ -4671,7 +4680,7 @@
 			(uuid "95f7c3a8-b1a9-47c2-97d2-ede5d168de8f")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "J3")
 					(unit 1)
@@ -4735,7 +4744,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "H1")
 					(unit 1)
@@ -4831,7 +4840,7 @@
 				)
 			)
 		)
-		(property "Value" "Inductor"
+		(property "Value" "L"
 			(at 156.21 85.09 90)
 			(effects
 				(font
@@ -4882,7 +4891,7 @@
 			(uuid "c7d6298d-520e-407b-a7ab-25b0fee380a2")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "L1")
 					(unit 1)
@@ -4907,7 +4916,7 @@
 				)
 			)
 		)
-		(property "Value" "120k"
+		(property "Value" "R_US"
 			(at 95.25 87.63 90)
 			(effects
 				(font
@@ -4948,7 +4957,7 @@
 			(uuid "d31f0d7b-13b5-499d-ad81-5fb3145fe24b")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "R1")
 					(unit 1)
@@ -4958,7 +4967,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 186.69 57.15 0)
+		(at 199.39 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4967,7 +4976,7 @@
 		(fields_autoplaced yes)
 		(uuid "7393dac2-eba9-425a-bd42-d5a9e064bbb0")
 		(property "Reference" "J1"
-			(at 189.23 57.1499 0)
+			(at 201.93 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4976,7 +4985,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 189.23 59.6899 0)
+			(at 201.93 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4985,7 +4994,7 @@
 			)
 		)
 		(property "Footprint" "MHCI:2060-452-998-404 Wago"
-			(at 186.69 57.15 0)
+			(at 199.39 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4994,7 +5003,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 186.69 57.15 0)
+			(at 199.39 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5003,7 +5012,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 186.69 57.15 0)
+			(at 199.39 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5012,7 +5021,7 @@
 			)
 		)
 		(property "MFR" "2060-452/998-404"
-			(at 186.69 57.15 0)
+			(at 199.39 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5027,7 +5036,7 @@
 			(uuid "8437d0ce-31dd-42e9-8b86-b71b0dfb26c4")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "J1")
 					(unit 1)
@@ -5106,7 +5115,7 @@
 			(uuid "9f070bf1-0e68-4a37-ab82-a073ffab1897")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "J4")
 					(unit 1)
@@ -5174,7 +5183,7 @@
 			(uuid "747b8698-7e08-4ec4-a5e3-66a8d9ea6e0b")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "C7")
 					(unit 1)
@@ -5304,7 +5313,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "HS1")
 					(unit 1)
@@ -5467,7 +5476,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Diode"
+		(property "Value" "D_Schottky"
 			(at 152.4 98.7424 90)
 			(effects
 				(font
@@ -5519,7 +5528,7 @@
 			(uuid "7dcc531a-40c8-45ac-9eac-1f6030e5eca8")
 		)
 		(instances
-			(project ""
+			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "D1")
 					(unit 1)
