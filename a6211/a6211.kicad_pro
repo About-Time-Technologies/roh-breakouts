@@ -581,6 +581,12 @@
           "group_by": false,
           "label": "MFR",
           "name": "MFR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
           "show": true
         }
       ],
