@@ -654,7 +654,7 @@
 				)
 			)
 		)
-		(symbol "Device:C_Polarized_US"
+		(symbol "Device:C_Polarized_Small_US"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0.254) hide)
@@ -662,7 +662,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "C"
-				(at 0.635 2.54 0)
+				(at 0.254 1.778 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -670,8 +670,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "C_Polarized_US"
-				(at 0.635 -2.54 0)
+			(property "Value" "C_Polarized_Small_US"
+				(at 0.254 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -697,7 +697,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Polarized capacitor, US symbol"
+			(property "Description" "Polarized capacitor, small US symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -724,13 +724,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "C_Polarized_US_0_1"
+			(symbol "C_Polarized_Small_US_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.508)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -739,7 +739,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
+						(xy -1.27 1.524) (xy -0.762 1.524)
 					)
 					(stroke
 						(width 0)
@@ -751,7 +751,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 1.778) (xy -1.27 2.794)
+						(xy -1.016 1.27) (xy -1.016 1.778)
 					)
 					(stroke
 						(width 0)
@@ -762,11 +762,11 @@
 					)
 				)
 				(arc
-					(start 2.032 -1.27)
-					(mid 0 -0.5572)
-					(end -2.032 -1.27)
+					(start 1.524 -0.762)
+					(mid 0 -0.3734)
+					(end -1.524 -0.762)
 					(stroke
-						(width 0.508)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -774,10 +774,10 @@
 					)
 				)
 			)
-			(symbol "C_Polarized_US_1_1"
+			(symbol "C_Polarized_Small_US_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
+					(at 0 2.54 270)
+					(length 2.032)
 					(name "~"
 						(effects
 							(font
@@ -794,8 +794,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.302)
+					(at 0 -2.54 90)
+					(length 2.032)
 					(name "~"
 						(effects
 							(font
@@ -2755,6 +2755,12 @@
 		(uuid "3246367f-7781-4169-82a1-12643d8fa17c")
 	)
 	(junction
+		(at 64.77 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32adf23a-b8f0-43e4-988a-aea51e4853b7")
+	)
+	(junction
 		(at 152.4 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2825,6 +2831,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad9fcb1b-0e77-4e58-8d0b-00e9fa5c277a")
+	)
+	(junction
+		(at 64.77 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc21c963-3aac-415a-b9a6-c0c3f81c6a8f")
 	)
 	(junction
 		(at 152.4 59.69)
@@ -2950,6 +2962,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 63.5) (xy 74.93 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f1676b3-975a-4567-986b-5f620ff93bf4")
+	)
+	(wire
+		(pts
 			(xy 181.61 81.28) (xy 182.88 81.28)
 		)
 		(stroke
@@ -2987,6 +3009,16 @@
 			(type default)
 		)
 		(uuid "1b69bb7a-9eb6-4246-bc89-037d482f2458")
+	)
+	(wire
+		(pts
+			(xy 74.93 68.58) (xy 74.93 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bb582e5-c704-45a8-ad65-97dbede328c2")
 	)
 	(wire
 		(pts
@@ -3090,6 +3122,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 60.96) (xy 64.77 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4600f860-2c45-4c5b-840c-85ea1f957dd9")
+	)
+	(wire
+		(pts
 			(xy 130.81 116.84) (xy 130.81 111.76)
 		)
 		(stroke
@@ -3187,6 +3229,16 @@
 			(type default)
 		)
 		(uuid "52f26846-10c3-41ef-abe7-1685d4bf84e9")
+	)
+	(wire
+		(pts
+			(xy 74.93 71.12) (xy 64.77 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54875c53-c3a9-4fb5-92b9-b1a862eb33b4")
 	)
 	(wire
 		(pts
@@ -3290,6 +3342,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 68.58) (xy 64.77 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ff31439-ff0e-422f-9390-00837883fcaf")
+	)
+	(wire
+		(pts
 			(xy 148.59 76.2) (xy 205.74 76.2)
 		)
 		(stroke
@@ -3327,16 +3389,6 @@
 			(type default)
 		)
 		(uuid "77434fc5-8e43-4e5c-9611-86bfbc2f6071")
-	)
-	(wire
-		(pts
-			(xy 64.77 69.85) (xy 64.77 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b5f063c-0e51-4c70-9d47-93e9a289f5e0")
 	)
 	(wire
 		(pts
@@ -3407,6 +3459,16 @@
 			(type default)
 		)
 		(uuid "90af60cd-4709-4cbd-98bd-aa7d91855b67")
+	)
+	(wire
+		(pts
+			(xy 64.77 60.96) (xy 64.77 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "910db54a-580a-4be6-ad1d-779def84f004")
 	)
 	(wire
 		(pts
@@ -3780,6 +3842,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 71.12) (xy 64.77 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9ea4d51-ada6-4061-8580-a9214e7300d0")
+	)
+	(wire
+		(pts
 			(xy 205.74 85.09) (xy 205.74 111.76)
 		)
 		(stroke
@@ -3870,7 +3942,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 62.23) (xy 64.77 46.99)
+			(xy 64.77 46.99) (xy 64.77 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4806,85 +4878,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_US")
-		(at 64.77 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1b31175a-3c1d-4014-8e04-93434bfdfeae")
-		(property "Reference" "C6"
-			(at 68.58 62.8649 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15uF"
-			(at 68.58 65.4049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
-			(at 64.77 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 64.77 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Cin"
-			(at 68.58 67.9449 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "LCSC" "C98553"
-			(at 64.77 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb57ccf2-84fb-4198-8d44-9bf39aa04bfb")
-		)
-		(pin "2"
-			(uuid "3e73bda9-37fa-4d32-b82f-44c74b5a86d0")
-		)
-		(instances
-			(project "tps922055"
-				(path "/d5f34ee9-2a3e-4a00-867e-0301e01cd76c"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 167.64 59.69 90)
 		(unit 1)
@@ -4902,7 +4895,7 @@
 				)
 			)
 		)
-		(property "Value" "10uH"
+		(property "Value" "22uH"
 			(at 167.64 54.61 90)
 			(effects
 				(font
@@ -4910,7 +4903,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL6060-XXX"
+		(property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8"
 			(at 167.64 59.69 0)
 			(effects
 				(font
@@ -4928,7 +4921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XAL6060-153MEC"
+		(property "Description" "SMDRH105R-220MT"
 			(at 167.64 57.15 90)
 			(effects
 				(font
@@ -4936,7 +4929,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19191628"
+		(property "LCSC" "C10165"
 			(at 167.64 59.69 90)
 			(effects
 				(font
@@ -5125,6 +5118,85 @@
 			(project "tps922055"
 				(path "/d5f34ee9-2a3e-4a00-867e-0301e01cd76c"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 74.93 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "345a18f9-97fe-45cb-aebe-dc371509a98e")
+		(property "Reference" "C9"
+			(at 77.47 64.7762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 77.47 67.3162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 74.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 74.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C29823"
+			(at 74.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b63a97f6-7e0f-46fe-8527-ad946d2096e8")
+		)
+		(pin "2"
+			(uuid "6274425f-8ce4-4a70-93ef-8096a419dc4f")
+		)
+		(instances
+			(project "tps922055"
+				(path "/d5f34ee9-2a3e-4a00-867e-0301e01cd76c"
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -6342,6 +6414,82 @@
 			(project "tps922055"
 				(path "/d5f34ee9-2a3e-4a00-867e-0301e01cd76c"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 172.72 33.02 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "8e9f8125-e649-49f9-9a98-3acecc8e3e5e")
+		(property "Reference" "L3"
+			(at 172.72 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15uH"
+			(at 172.72 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL6060-XXX"
+			(at 172.72 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "XAL6060-153MEC"
+			(at 172.72 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C19191628"
+			(at 172.72 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b1de2f0-2523-4796-90bf-9603425a7553")
+		)
+		(pin "2"
+			(uuid "eaa75507-e295-4996-919b-610e5c99f738")
+		)
+		(instances
+			(project "tps922055"
+				(path "/d5f34ee9-2a3e-4a00-867e-0301e01cd76c"
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -7718,6 +7866,94 @@
 			(project "tps922055"
 				(path "/d5f34ee9-2a3e-4a00-867e-0301e01cd76c"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 64.77 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe3c0f62-e3db-4d5a-8221-68b006864710")
+		(property "Reference" "C8"
+			(at 67.31 64.3381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 67.31 66.8781 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "GXC1J470MCQ1GS"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C40078"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63f2a22f-a3aa-4f7a-a175-d6018aba8625")
+		)
+		(pin "2"
+			(uuid "0ae271ae-57dd-46fe-a5b4-8677cd5b50fb")
+		)
+		(instances
+			(project "tps922055"
+				(path "/d5f34ee9-2a3e-4a00-867e-0301e01cd76c"
+					(reference "C8")
 					(unit 1)
 				)
 			)
