@@ -2292,12 +2292,6 @@
 		(uuid "6a30f2bc-8374-488b-adc6-01d11fb3c289")
 	)
 	(junction
-		(at 160.02 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "80db8459-5f6e-4c99-82d2-8925a60fb319")
-	)
-	(junction
 		(at 121.92 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2332,6 +2326,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b90784bf-dcb8-4e56-a10c-6e2c00bf9f32")
+	)
+	(junction
+		(at 160.02 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9c9a9c2-59d6-47fe-b41c-497f7128aceb")
 	)
 	(junction
 		(at 166.37 113.03)
@@ -3892,6 +3892,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 156.21 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35bfd483-2f35-4503-a531-afcffa53b4e7")
+		(property "Reference" "L2"
+			(at 156.21 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uH"
+			(at 156.21 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8"
+			(at 156.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMDRH105R-330MT"
+			(at 156.21 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C9186"
+			(at 156.21 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a82be7ce-6d0e-40fa-9c16-317657d129b5")
+		)
+		(pin "2"
+			(uuid "8502ac4a-d9b8-46b0-aef9-1ad77ac06977")
+		)
+		(instances
+			(project "a6211"
+				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "A6211:A6211")
 		(at 121.92 93.98 0)
 		(unit 1)
@@ -5275,7 +5351,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 160.02 100.33 0)
 			(effects
 				(font
@@ -5301,7 +5377,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C50254"
+		(property "LCSC" "C13967"
 			(at 160.02 100.33 0)
 			(effects
 				(font
@@ -5489,6 +5565,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 146.05 62.23 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "ec3d8df0-4e65-44f1-9e67-fc36d0a79254")
+		(property "Reference" "L1"
+			(at 146.05 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uH"
+			(at 146.05 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL6060-XXX"
+			(at 146.05 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "XAL6060-333MEC"
+			(at 146.05 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5119929"
+			(at 146.05 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d5a685f-61a1-4bec-a8e1-4ebcac85d728")
+		)
+		(pin "2"
+			(uuid "0211bf61-ed96-4994-96ed-3e660cce15fa")
+		)
+		(instances
+			(project "a6211"
+				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 38.1 44.45 0)
 		(unit 1)
@@ -5624,82 +5776,6 @@
 			(project "a6211"
 				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 156.21 87.63 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd47a95c-8d83-4bef-a6a4-684d457366e9")
-		(property "Reference" "L1"
-			(at 156.21 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10uH"
-			(at 156.21 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL6060-XXX"
-			(at 156.21 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "XAL6060-333MEC"
-			(at 156.21 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C5119929"
-			(at 156.21 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7bfe8ba-6918-4d6a-8d81-0f09e8aaa87a")
-		)
-		(pin "2"
-			(uuid "c04733b3-6bf0-4b05-a457-2e91a8a5f82e")
-		)
-		(instances
-			(project "a6211"
-				(path "/0eae7fad-4295-4de1-8a09-6528fc5757a4"
-					(reference "L1")
 					(unit 1)
 				)
 			)
