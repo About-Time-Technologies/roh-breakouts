@@ -4117,7 +4117,7 @@
 		)
 		(uuid "75c835a7-3ece-4bd9-937c-b2f1a85e82be")
 	)
-	(text "Rtemp: 56k 0.1% 0.1W 0603 -> 110degC\n"
+	(text "Rtemp: 27k 0.1% 0.1W 0603 -> 120degC\n"
 		(exclude_from_sim no)
 		(at 144.526 126.238 0)
 		(effects
@@ -7733,7 +7733,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "27k"
 			(at 153.67 93.9799 0)
 			(effects
 				(font
@@ -7768,7 +7768,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23206"
+		(property "LCSC" "C22967"
 			(at 151.13 92.71 0)
 			(effects
 				(font
