@@ -1,4 +1,4 @@
-//written using a clone of esp_dmx v4.1.0
+
 
 #define DEBUG  // Uncomment this line to enable debugging messages
 
@@ -18,7 +18,8 @@
 #include <DallasTemperature.h>
 #include <WiFi.h>
 #include <ESPAsyncWebServer.h>
-#include <DNSServer.h>
+
+#include <ElegantOTA.h>
 
 // PWM Configuration
 const uint8_t pwmChannel = 1;
@@ -47,20 +48,18 @@ String tempPCB_Cs = "", tempAir_Cs = "";
 bool tempPCB_found = true, tempAir_found = true;
 
 // PWM frequency variable
-uint16_t pwmFreq = 1000;
+uint16_t pwmFreq = 25000;
 
 
 AsyncWebServer server(80);
-DNSServer dnsServer;
-
-const char* ssid = "Walkure Streetlight - 3";
+const char* ssid = "W-Streetlight-1-Temp";
 const char* password = "94499449";
+unsigned long ota_progress_millis = 0;
+IPAddress local_IP(192, 168, 1, 1);
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 0, 0);
 
-const IPAddress localIP(192,168,0,1);
-const IPAddress gatewayIP(192,168,0,1);
-const IPAddress subnetMask(255,255,0,0);
-
-const String localIPURL = "http://192.168.0.1";
+const String localIPURL = "http://192.168.1.1";
 
 const char index_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE HTML><html>
@@ -161,15 +160,6 @@ void setupTempSensors() {
     DEBUG_PRINTLN("Temp Sensors Initialised");
 }
 
-void setupDNSServer(DNSServer &dnsServer, const IPAddress &localIP) {
-    #define DNS_INTERVAL 30
-
-    dnsServer.setTTL(3600);
-    dnsServer.start(53, "*", localIP);
-
-    DEBUG_PRINTLN("DNS Server Started");
-}
-
 String webProcessor(const String& var) {
     if (var == "tempPCB") {
         return String(tempPCB_C);
@@ -182,25 +172,49 @@ String webProcessor(const String& var) {
     return String();
 }
 
-bool startAP() {
-// Define the maximum number of clients that can connect to the server
-#define MAX_CLIENTS 4
-// Define the WiFi channel to be used (channel 6 in this case)
-#define WIFI_CHANNEL 6
+void onOTAStart() {
+    DEBUG_PRINTLN("OTA Update Started");
+}
+void onOTAProgress(size_t current, size_t final) {
+    if (millis() - ota_progress_millis > 1000) {
+        ota_progress_millis = millis();
+        DEBUG_PRINTF("OTA Progress Current: %u bytes, Final: %u bytes\n\r", current, final);
+    }
+}
 
-	// Set the WiFi mode to access point and station
-	WiFi.mode(WIFI_MODE_AP);
+void onOTAEnd(bool success) {
+    if (success) {
+        DEBUG_PRINTLN("OTA Updated Successfully");
+    } else {
+        DEBUG_PRINTLN("OTA Update Failed");
+    }
+}
 
-	// Define the subnet mask for the WiFi network
-	const IPAddress subnetMask(255, 255, 255, 0);
+void startAP() {
+    if (WiFi.getMode() != WIFI_OFF) return;
 
-	// Configure the soft access point with a specific IP and subnet mask
-	WiFi.softAPConfig(localIP, gatewayIP, subnetMask);
+    DEBUG_PRINTLN("Starting OTA mode");
+    WiFi.softAPConfig(local_IP, gateway, subnet);
+    WiFi.softAP(ssid, password, 6, 1, 3);
 
-    DEBUG_PRINTLN("AP Configured");
+    IPAddress IP = WiFi.softAPIP();
+    DEBUG_PRINTLN(IP);
 
-	// Start the soft access point with the given ssid, password, channel, max number of clients
-	return WiFi.softAP(ssid, password, WIFI_CHANNEL, 0, MAX_CLIENTS);
+    ElegantOTA.begin(&server);
+    ElegantOTA.onStart(onOTAStart);
+    ElegantOTA.onEnd(onOTAEnd);
+    ElegantOTA.onProgress(onOTAProgress);
+
+    server.begin();
+}
+
+void stopAP() {
+    if (WiFi.getMode() == WIFI_OFF) return;
+
+    DEBUG_PRINTLN("Stopping OTA mode");
+    server.end();
+    WiFi.disconnect();
+    WiFi.mode(WIFI_OFF);
 }
 
 void setupWeb() {
@@ -239,31 +253,20 @@ void setupWeb() {
     DEBUG_PRINTLN("Web processor initialised");
 }
 
-void startWeb() {
-    if (startAP()) {
-        server.begin();
-        DEBUG_PRINTLN("Web Server started");
-    }
-}
-
-void stopWeb() {
-    server.end();
-}
-
-
 
 void setup() {
     #ifdef DEBUG
     Serial.begin(115200);
     #endif
+    WiFi.mode(WIFI_OFF);
 
     delay(1000);
+
 
     setupFanPWM();
     setupTempSensors();
     setupWeb();
-    startWeb();
-    setupDNSServer(dnsServer, localIP);
+    startAP();
 }
 
 void readTempAir() {
